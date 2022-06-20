@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">inventoryapp</string>
+    <string name="item_inventory_name">McFlurry</string>
+    <string name="desc_item">McDonalds</string>
+    <string name="harga_item">Rp11.364</string>
+    <string name="jumlah_stock">150</string>
 </resources>
