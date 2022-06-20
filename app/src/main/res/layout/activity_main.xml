@@ -7,12 +7,106 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/tv_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Let’s Get Started!"
+        android:fontFamily="@font/sfprobold"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="60dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign up with Social or fill the form to continue."
+        android:fontFamily="@font/sfproregular"
+        android:textSize="15dp"
+        android:textColor="@color/grey"
+        android:layout_marginTop="6dp"
+        app:layout_constraintStart_toStartOf="@id/tv_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+    <ImageView
+        android:id="@+id/line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line_login"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_desc"
+        app:layout_constraintStart_toStartOf="@id/tv_desc"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/il_name"
+        app:startIconDrawable="@drawable/ic_baseline_person_24"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/line"
+        app:layout_constraintStart_toStartOf="@id/line"
+        >
+        <EditText
+            android:inputType="textEmailAddress"
+            android:hint="Name"
+            android:fontFamily="@font/sfproregular"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/il_email"
+        app:startIconDrawable="@drawable/ic_baseline_email_24"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/il_name"
+        app:layout_constraintStart_toStartOf="@id/line"
+        >
+        <EditText
+            android:hint="Email"
+            android:fontFamily="@font/sfproregular"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/il_password"
+        app:startIconDrawable="@drawable/ic_baseline_lock_24"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/il_email"
+        app:layout_constraintStart_toStartOf="@id/line"
+        >
+        <EditText
+            android:hint="Password"
+            android:fontFamily="@font/sfproregular"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/sfproregular"
+        app:layout_constraintTop_toBottomOf="@id/il_password"
+        app:layout_constraintStart_toStartOf="@id/il_password"
+        android:text="At least 8 characters, 1 uppercase letter, 1 number, 1 symbol"
+        android:textSize="12sp"
+        />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
