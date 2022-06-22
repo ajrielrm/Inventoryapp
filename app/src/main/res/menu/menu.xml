@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/nb_home"
+        android:icon="@drawable/ic_home"
+        app:cnb_iconColor="@color/white"
+        android:enabled="true"
+        android:title="Home"
+        />
+
+    <item
+        android:id="@+id/nb_message"
+        android:icon="@drawable/ic_inventory"
+        app:cnb_iconColor="@color/white"
+        android:title="Inventory"
+        />
+
+
+
+    <item
+        android:id="@+id/nb_liked"
+        android:icon="@drawable/ic_history"
+        app:cnb_iconColor="@color/white"
+        android:title="History"
+        />
+
+    <item
+        android:id="@+id/nb_profile"
+        android:icon="@drawable/ic_settings"
+        app:cnb_iconColor="@color/white"
+        android:title="Settings"
+        />
+</menu>

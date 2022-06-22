@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white"
+    >
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Let’s Get Started!"
+        android:fontFamily="@font/sfprobold"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign up with Social or fill the form to continue."
+        android:fontFamily="@font/sfproregular"
+        android:textSize="15dp"
+        android:textColor="@color/grey"
+        android:layout_marginTop="6dp"
+        app:layout_constraintStart_toStartOf="@id/tv_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+    <ImageView
+        android:id="@+id/line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line_login"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_desc"
+        app:layout_constraintStart_toStartOf="@id/tv_desc"
+        android:contentDescription="ok"
+        tools:ignore="HardcodedText" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/il_name"
+        app:startIconDrawable="@drawable/ic_baseline_person_24"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        app:boxStrokeColor="@color/primary"
+        app:hintTextColor="@color/primary"
+        app:layout_constraintTop_toBottomOf="@id/line"
+        app:layout_constraintStart_toStartOf="@id/line"
+        >
+        <EditText
+            android:inputType="textEmailAddress"
+            android:hint="Name"
+            android:fontFamily="@font/sfproregular"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/il_email"
+        app:startIconDrawable="@drawable/ic_baseline_email_24"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        app:boxStrokeColor="@color/primary"
+        app:hintTextColor="@color/primary"
+        app:layout_constraintTop_toBottomOf="@id/il_name"
+        app:layout_constraintStart_toStartOf="@id/line"
+        >
+        <EditText
+            android:hint="Email"
+            android:fontFamily="@font/sfproregular"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/il_password"
+        app:startIconDrawable="@drawable/ic_baseline_lock_24"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        app:boxStrokeColor="@color/primary"
+        app:hintTextColor="@color/primary"
+        app:layout_constraintTop_toBottomOf="@id/il_email"
+        app:layout_constraintStart_toStartOf="@id/line"
+        >
+        <EditText
+            android:hint="Password"
+            android:fontFamily="@font/sfproregular"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tv_req"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/sfproregular"
+        app:layout_constraintTop_toBottomOf="@id/il_password"
+        app:layout_constraintStart_toStartOf="@id/il_password"
+        android:text="*At least 8 characters, 1 uppercase letter, 1 number, 1 symbol"
+        android:textSize="12sp"
+        android:textColor="@color/grey"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bt_signup"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:fontFamily="@font/sfprobold"
+        android:text="Sign Up"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/primary"
+        app:cornerRadius="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_req"
+        android:layout_marginTop="100dp"
+        />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toTopOf="@id/bt_signup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+
+        <CheckBox
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/checkbox"
+            android:button="@null"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="By Signing up, you agree to the Terms of Service and Privacy Policy"
+            android:textColor="@color/grey"
+            />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <TextView
+        android:id="@+id/bt_signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:fontFamily="@font/sfprobold"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="@id/bt_signup"
+        app:layout_constraintEnd_toEndOf="@+id/bt_signup"
+        app:layout_constraintTop_toBottomOf="@id/bt_signup" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
