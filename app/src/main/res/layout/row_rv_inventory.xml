@@ -3,14 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/grey">
+    android:layout_height="match_parent">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cv_row_item_inventory"
         android:layout_width="340dp"
         android:layout_height="105dp"
-        app:cardCornerRadius="6dp"
+        app:cardCornerRadius="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -22,7 +22,7 @@
                 android:id="@+id/iv_image_item"
                 android:layout_width="112dp"
                 android:layout_height="wrap_content"
-                android:src="@drawable/item_potoo"
+                android:src="@drawable/img_router"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -32,8 +32,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
-                android:text="@string/item_inventory_name"
                 android:fontFamily="@font/sfprobold"
+                android:text="@string/item_inventory_name"
                 android:textColor="@color/black"
                 android:textSize="15sp"
                 app:layout_constraintStart_toEndOf="@+id/iv_image_item"
@@ -44,8 +44,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="60dp"
-                android:text="@string/desc_item"
                 android:fontFamily="@font/sfproregular"
+                android:text="@string/desc_item"
                 android:textSize="11sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="@+id/tv_row_inventory" />
@@ -54,14 +54,14 @@
                 android:id="@+id/tv_harga_item"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="40dp"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="30dp"
                 android:fontFamily="@font/sfproregular"
                 android:text="@string/harga_item"
                 android:textColor="@color/black"
                 android:textSize="16sp"
-                app:layout_constraintBottom_toBottomOf="@+id/tv_time_item"
-                app:layout_constraintStart_toEndOf="@+id/tv_time_item"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_location_item"
+                app:layout_constraintStart_toEndOf="@+id/tv_location_item"
                 app:layout_constraintTop_toBottomOf="@+id/iv_bg_jumlah_stock" />
 
             <androidx.appcompat.widget.AppCompatImageView
@@ -87,28 +87,26 @@
                 app:layout_constraintTop_toTopOf="@+id/iv_bg_jumlah_stock" />
 
 
-
-
             <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/tv_time"
+                android:id="@+id/tv_location"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:fontFamily="@font/sfproregular"
-                android:text="@string/text_time"
+                android:text="@string/text_location"
                 android:textSize="6sp"
                 app:layout_constraintStart_toStartOf="@+id/tv_row_inventory"
                 app:layout_constraintTop_toBottomOf="@+id/tv_desc_item" />
 
             <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/tv_time_item"
+                android:id="@+id/tv_location_item"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
                 android:fontFamily="@font/sfproregular"
-                android:text="@string/time_item"
-                android:textSize="10sp"
+                android:text="@string/location_item"
                 android:textColor="@color/black"
+                android:textSize="10sp"
                 app:fontFamily="@font/sfproregular"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="@+id/tv_row_inventory" />

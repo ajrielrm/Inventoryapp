@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">inventoryapp</string>
+    <string name="time_item">02-05-2022, 12:12</string>
+    <string name="text_time">Date/Time</string>
+    <string name="jumlah_stock">150</string>
+    <string name="item_inventory_name">RV110W</string>
+    <string name="harga_item">Rp2.500.000</string>
+    <string name="desc_item">Cisco</string>
+    <string name="text_location">Location</string>
+    <string name="location_item">My Warehouse 1 - Rack 2</string>
+    <string name="text_search">Search</string>
 </resources>
