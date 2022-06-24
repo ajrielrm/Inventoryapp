@@ -26,5 +26,12 @@ class LoginActivity : AppCompatActivity() {
             val goToDashboard = Intent(this, MainActivity::class.java)
             startActivity(goToDashboard)
         }
+
+        binding.test.setOnClickListener(){
+            val search = Intent(this, SearchActivity::class.java)
+            startActivity(search)
+        }
+
+
     }
 }
