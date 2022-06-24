@@ -10,7 +10,11 @@ import androidx.recyclerview.widget.RecyclerView
 
 class ItemAdapter: RecyclerView.Adapter<ItemAdapter.ViewHolder>(){
 
-    private var title = arrayOf("")
+    private var title = arrayOf("RV110W", "AC-1200", "Catalyst 2960-L", "N200RE", "EZ-Label Printer", "HP-All in One 720")
+
+    private var merek = arrayOf("Cisco", "Tp-Link", "Cisco", "TOTOLINK", "Casio", "HP")
+
+    private var image = intArrayOf(R.drawable.img_router, R.drawable.img_ac, R.drawable.img_cata, R.drawable.img_nt200, R.drawable.img_ezlabel, R.drawable.img_hp)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemAdapter.ViewHolder {
         val v = LayoutInflater.from(parent.context).inflate(R.layout.row_rv_inventory, parent, false)
@@ -18,11 +22,13 @@ class ItemAdapter: RecyclerView.Adapter<ItemAdapter.ViewHolder>(){
     }
 
     override fun onBindViewHolder(holder: ItemAdapter.ViewHolder, position: Int) {
-        TODO("Not yet implemented")
+        holder.itemTitle.text = title[position]
+        holder.itemMerek.text = merek[position]
+        holder.itemImage.setImageResource(image[position])
     }
 
     override fun getItemCount(): Int {
-        TODO("Not yet implemented")
+        return title.size
     }
 
     inner class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
@@ -38,6 +44,9 @@ class ItemAdapter: RecyclerView.Adapter<ItemAdapter.ViewHolder>(){
             itemMerek = itemView.findViewById(R.id.tv_desc_item)
             itemHarga = itemView.findViewById(R.id.tv_harga_item)
             itemStock = itemView.findViewById(R.id.tv_jumlah_stock)
+
+
+            }
         }
 
 
