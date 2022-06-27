@@ -60,10 +60,9 @@
             android:layout_height="160dp"
             android:layout_marginTop="15dp"
             android:background="@drawable/ic_bg_report"
-            app:layout_constraintLeft_toLeftOf="@id/tv_welcome"
-            app:layout_constraintTop_toBottomOf="@id/tv_dashboard"
             android:padding="16dp"
-            >
+            app:layout_constraintLeft_toLeftOf="@id/tv_welcome"
+            app:layout_constraintTop_toBottomOf="@id/tv_dashboard">
 
             <TextView
                 android:id="@+id/tv_hariini"
@@ -71,50 +70,47 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/sfprobold"
                 android:text="Hari ini"
-                android:textSize="20sp"
                 android:textColor="@color/white"
-                app:layout_constraintTop_toTopOf="parent"
+                android:textSize="20sp"
                 app:layout_constraintLeft_toLeftOf="parent"
-                />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/tv_tanggal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
                 android:fontFamily="@font/sfprosemi"
                 android:text="@string/tanggaldashboard"
-                android:textSize="20sp"
                 android:textColor="#D9D9D9"
-                app:layout_constraintTop_toTopOf="parent"
+                android:textSize="20sp"
                 app:layout_constraintStart_toEndOf="@id/tv_hariini"
-                android:layout_marginStart="10dp"
-                />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/tv_viewall"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
                 android:fontFamily="@font/sfproregular"
                 android:text="View all"
-                android:textSize="15sp"
                 android:textColor="@color/white"
-                app:layout_constraintTop_toTopOf="parent"
-                android:layout_marginTop="5dp"
+                android:textSize="15sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                android:layout_marginStart="10dp"
-                />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/tv_item_count"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
                 android:fontFamily="@font/sfprobold"
                 android:text="00000"
-                android:textSize="20sp"
                 android:textColor="@color/white"
-                app:layout_constraintTop_toBottomOf="@id/tv_hariini"
-                android:layout_marginTop="15dp"
+                android:textSize="20sp"
                 app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_hariini"
 
                 />
 
@@ -122,16 +118,15 @@
                 android:id="@+id/tv_items"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
                 android:fontFamily="@font/sfprosemi"
                 android:text="Items"
-                android:textSize="20sp"
                 android:textColor="#D9D9D9"
-                app:layout_constraintTop_toBottomOf="@id/tv_item_count"
-                android:layout_marginTop="5dp"
+                android:textSize="20sp"
                 app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_item_count"
 
                 />
-
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

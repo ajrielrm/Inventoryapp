@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StockinActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_close"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="40dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_stockin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/stockin_text"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:fontFamily="@font/sspbold"
+        app:layout_constraintStart_toStartOf="@+id/toolbar"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        android:layout_marginTop="30dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_desc_stockin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lorem ipsum dolor sit amet, consectetur"
+        android:textSize="15sp"
+        app:fontFamily="@font/sourcesansreg"
+        app:layout_constraintStart_toStartOf="@+id/tv_stockin"
+        app:layout_constraintTop_toBottomOf="@+id/tv_stockin" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/line_login"
+        app:layout_constraintStart_toStartOf="@+id/tv_desc_stockin"
+        app:layout_constraintTop_toBottomOf="@+id/tv_desc_stockin" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/il_namabarang"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        app:boxStrokeColor="@color/primary"
+        app:hintTextColor="@color/primary"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="@+id/iv_line"
+        app:layout_constraintTop_toBottomOf="@+id/iv_line"
+        app:startIconDrawable="@drawable/ic_namabarang">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/sourcesansreg"
+            android:hint="Nama Barang" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/il_deskripsi"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        app:boxStrokeColor="@color/primary"
+        app:hintTextColor="@color/primary"
+        app:layout_constraintStart_toStartOf="@+id/il_namabarang"
+        app:layout_constraintTop_toBottomOf="@+id/il_namabarang"
+        app:startIconDrawable="@drawable/ic_deskripsi">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/sourcesansreg"
+            android:hint="Deskripsi" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/il_serialnumber"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        app:boxStrokeColor="@color/primary"
+        app:hintTextColor="@color/primary"
+        app:layout_constraintStart_toStartOf="@+id/il_deskripsi"
+        app:layout_constraintTop_toBottomOf="@+id/il_deskripsi"
+        app:startIconDrawable="@drawable/ic_serialnumber">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/sourcesansreg"
+            android:hint="Serial Number" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/il_harga"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        app:boxStrokeColor="@color/primary"
+        app:hintTextColor="@color/primary"
+        app:layout_constraintStart_toStartOf="@+id/il_serialnumber"
+        app:layout_constraintTop_toBottomOf="@+id/il_serialnumber"
+        app:startIconDrawable="@drawable/ic_harga">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/sourcesansreg"
+            android:hint="Harga" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bt_submit"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="85dp"
+        android:backgroundTint="@color/primary"
+        android:fontFamily="@font/sspbold"
+        android:text="Submit"
+        android:textAllCaps="false"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/il_harga"
+        app:layout_constraintStart_toStartOf="@+id/il_harga"
+        app:layout_constraintTop_toBottomOf="@+id/il_harga" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
