@@ -11,4 +11,14 @@
     <string name="text_search">Search</string>
     <string name="tanggaldashboard">24 Juni</string>
     <string name="stockin_text">Stock In</string>
+
+    // Dropdown Kategori Items
+    <string-array name="kategori_items">
+        <item>Router</item>
+        <item>Switch</item>
+        <item>Bridge</item>
+        <item>Modem</item>
+        <item>Repeater</item>
+    </string-array>
+
 </resources>
