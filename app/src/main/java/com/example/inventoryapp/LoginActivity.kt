@@ -8,6 +8,7 @@ import com.example.inventoryapp.databinding.ActivityLoginBinding
 
 class LoginActivity : AppCompatActivity() {
 
+
     private lateinit var binding: ActivityLoginBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,7 +29,7 @@ class LoginActivity : AppCompatActivity() {
         }
 
         binding.test.setOnClickListener(){
-            val search = Intent(this, SearchActivity::class.java)
+            val search = Intent(this, ScanActivity::class.java)
             startActivity(search)
         }
 

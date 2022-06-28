@@ -3,46 +3,32 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Legion/AndroidStudioProjects/Inventoryapp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.122" />
-        <entry key="..\:/Users/Legion/AndroidStudioProjects/Inventoryapp/app/src/main/res/drawable/bg_cv_beranda.xml" value="0.1645" />
-        <entry key="..\:/Users/Legion/AndroidStudioProjects/Inventoryapp/app/src/main/res/drawable/bg_kategori.xml" value="0.1" />
-        <entry key="..\:/Users/Legion/AndroidStudioProjects/Inventoryapp/app/src/main/res/drawable/bg_main_btn.xml" value="0.1" />
-        <entry key="..\:/Users/Legion/AndroidStudioProjects/Inventoryapp/app/src/main/res/drawable/bg_rounded.xml" value="0.165" />
-        <entry key="..\:/Users/Legion/AndroidStudioProjects/Inventoryapp/app/src/main/res/drawable/checkbox.xml" value="0.165" />
-        <entry key="..\:/Users/Legion/AndroidStudioProjects/Inventoryapp/app/src/main/res/drawable/ic_baseline_email_24.xml" value="0.122" />
-        <entry key="..\:/Users/Legion/AndroidStudioProjects/Inventoryapp/app/src/main/res/drawable/ic_baseline_lock_24.xml" value="0.122" />
-        <entry key="..\:/Users/Legion/AndroidStudioProjects/Inventoryapp/app/src/main/res/drawable/ic_checkbox_uc.xml" value="0.1645" />
-        <entry key="..\:/Users/Legion/AndroidStudioProjects/Inventoryapp/app/src/main/res/drawable/ic_history.xml" value="0.1645" />
-        <entry key="..\:/Users/Legion/AndroidStudioProjects/Inventoryapp/app/src/main/res/drawable/line_login.xml" value="0.1635" />
-        <entry key="..\:/Users/Legion/AndroidStudioProjects/Inventoryapp/app/src/main/res/drawable/row_bg_preview.xml" value="0.122" />
-        <entry key="..\:/Users/Legion/AndroidStudioProjects/Inventoryapp/app/src/main/res/layout/activity_detail.xml" value="0.264" />
-        <entry key="..\:/Users/Legion/AndroidStudioProjects/Inventoryapp/app/src/main/res/layout/activity_login.xml" value="0.264" />
-        <entry key="..\:/Users/Legion/AndroidStudioProjects/Inventoryapp/app/src/main/res/layout/activity_main.xml" value="0.22327898550724637" />
-        <entry key="..\:/Users/Legion/AndroidStudioProjects/Inventoryapp/app/src/main/res/layout/activity_register.xml" value="0.14719202898550723" />
-        <entry key="..\:/Users/Legion/AndroidStudioProjects/Inventoryapp/app/src/main/res/layout/activity_search.xml" value="0.4" />
-        <entry key="..\:/Users/Legion/AndroidStudioProjects/Inventoryapp/app/src/main/res/layout/activity_stockin.xml" value="0.264" />
-        <entry key="..\:/Users/Legion/AndroidStudioProjects/Inventoryapp/app/src/main/res/layout/fragment_dashboard.xml" value="0.2" />
-        <entry key="..\:/Users/Legion/AndroidStudioProjects/Inventoryapp/app/src/main/res/layout/row_preview.xml" value="0.264" />
-        <entry key="..\:/Users/Legion/AndroidStudioProjects/Inventoryapp/app/src/main/res/layout/row_rv_inventory.xml" value="0.4" />
-        <entry key="..\:/Users/Legion/AndroidStudioProjects/Inventoryapp/app/src/main/res/menu/menu.xml" value="0.1" />
-        <entry key="app/src/main/res/drawable/bg_add_item.xml" value="0.2195" />
-        <entry key="app/src/main/res/drawable/bg_report.xml" value="0.2195" />
-        <entry key="app/src/main/res/drawable/bg_rounded.xml" value="0.2195" />
-        <entry key="app/src/main/res/drawable/bg_stock.xml" value="0.2195" />
-        <entry key="app/src/main/res/drawable/ic_bg_report.xml" value="0.2195" />
-        <entry key="app/src/main/res/drawable/ic_checkbox_uc.xml" value="0.2195" />
-        <entry key="app/src/main/res/drawable/ic_harga.xml" value="0.2195" />
-        <entry key="app/src/main/res/drawable/line_login.xml" value="0.2195" />
-        <entry key="app/src/main/res/layout/activity_add_item.xml" value="0.2598684210526316" />
-        <entry key="app/src/main/res/layout/activity_detail.xml" value="0.13815789473684212" />
-        <entry key="app/src/main/res/layout/activity_inventory.xml" value="0.2598684210526316" />
-        <entry key="app/src/main/res/layout/activity_stockin.xml" value="0.11177239668996708" />
-        <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.242137886742738" />
-        <entry key="app/src/main/res/layout/list_item_kategori.xml" value="0.25921052631578945" />
+        <entry key="..\:/Users/ajrie/AndroidStudioProjects/inventoryapp/app/src/main/res/drawable/bg_kategori.xml" value="0.1465" />
+        <entry key="..\:/Users/ajrie/AndroidStudioProjects/inventoryapp/app/src/main/res/drawable/bg_srcview.xml" value="0.1465" />
+        <entry key="..\:/Users/ajrie/AndroidStudioProjects/inventoryapp/app/src/main/res/drawable/bt_scan.xml" value="0.1465" />
+        <entry key="..\:/Users/ajrie/AndroidStudioProjects/inventoryapp/app/src/main/res/drawable/checkbox.xml" value="0.1465" />
+        <entry key="..\:/Users/ajrie/AndroidStudioProjects/inventoryapp/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.1465" />
+        <entry key="..\:/Users/ajrie/AndroidStudioProjects/inventoryapp/app/src/main/res/drawable/ic_bg_scan.xml" value="0.1465" />
+        <entry key="..\:/Users/ajrie/AndroidStudioProjects/inventoryapp/app/src/main/res/drawable/ic_checkbox_ck.xml" value="0.1465" />
+        <entry key="..\:/Users/ajrie/AndroidStudioProjects/inventoryapp/app/src/main/res/drawable/ic_checkbox_uc.xml" value="0.1465" />
+        <entry key="..\:/Users/ajrie/AndroidStudioProjects/inventoryapp/app/src/main/res/drawable/ic_home.xml" value="0.1465" />
+        <entry key="..\:/Users/ajrie/AndroidStudioProjects/inventoryapp/app/src/main/res/drawable/ic_scan.xml" value="0.1465" />
+        <entry key="..\:/Users/ajrie/AndroidStudioProjects/inventoryapp/app/src/main/res/drawable/ic_settings.xml" value="0.1465" />
+        <entry key="..\:/Users/ajrie/AndroidStudioProjects/inventoryapp/app/src/main/res/drawable/line_login.xml" value="0.1465" />
+        <entry key="..\:/Users/ajrie/AndroidStudioProjects/inventoryapp/app/src/main/res/drawable/row_bg_preview.xml" value="0.1465" />
+        <entry key="..\:/Users/ajrie/AndroidStudioProjects/inventoryapp/app/src/main/res/layout/activity_login.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ajrie/AndroidStudioProjects/inventoryapp/app/src/main/res/layout/activity_main.xml" value="0.136" />
+        <entry key="..\:/Users/ajrie/AndroidStudioProjects/inventoryapp/app/src/main/res/layout/activity_register.xml" value="0.176" />
+        <entry key="..\:/Users/ajrie/AndroidStudioProjects/inventoryapp/app/src/main/res/layout/activity_scan.xml" value="0.264" />
+        <entry key="..\:/Users/ajrie/AndroidStudioProjects/inventoryapp/app/src/main/res/layout/activity_search.xml" value="0.23508771929824562" />
+        <entry key="..\:/Users/ajrie/AndroidStudioProjects/inventoryapp/app/src/main/res/layout/fragment_dashboard.xml" value="0.2" />
+        <entry key="..\:/Users/ajrie/AndroidStudioProjects/inventoryapp/app/src/main/res/layout/row_preview.xml" value="0.12360688956433637" />
+        <entry key="..\:/Users/ajrie/AndroidStudioProjects/inventoryapp/app/src/main/res/layout/row_rv_inventory.xml" value="0.140625" />
+        <entry key="..\:/Users/ajrie/AndroidStudioProjects/inventoryapp/app/src/main/res/menu/menu.xml" value="0.253125" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
