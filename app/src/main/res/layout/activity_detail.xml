@@ -34,6 +34,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="35dp"
         android:rotation="180"
+        android:background="@drawable/ic_close"
         app:layout_constraintBottom_toTopOf="@+id/tv_warehouse_detail"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@id/tv_itemdetail" />
@@ -92,13 +93,12 @@
         android:id="@+id/tv_serialnumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="325dp"
         android:fontFamily="@font/sspbold"
         android:text="1028129832"
         android:textColor="@color/black"
         android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/tv_txt_serialnumber" />\
+        app:layout_constraintStart_toStartOf="@+id/tv_txt_serialnumber"
+        app:layout_constraintTop_toBottomOf="@+id/tv_txt_serialnumber" />\
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tv_txt_location"
@@ -166,7 +166,7 @@
         android:id="@+id/tv_txt_harga"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="145dp"
+        android:layout_marginStart="120dp"
         android:fontFamily="@font/sfprosemi"
         android:text="Harga"
         app:layout_constraintStart_toEndOf="@+id/tv_txt_serialnumber"
