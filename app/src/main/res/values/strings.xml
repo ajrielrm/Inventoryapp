@@ -21,4 +21,12 @@
         <item>Repeater</item>
     </string-array>
 
+    // Dropdown Dari/Move Items
+    <string-array name="warehouse_items">
+        <item>Warehouse Sementara</item>
+        <item>Warehouse 1</item>
+        <item>Warehouse 2</item>
+        <item>Warehouse 3</item>
+    </string-array>
+
 </resources>
