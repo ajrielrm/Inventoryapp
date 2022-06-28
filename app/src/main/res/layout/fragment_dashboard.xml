@@ -236,7 +236,7 @@
         <RelativeLayout
             android:id="@+id/container_add_item"
             android:layout_width="wrap_content"
-            android:layout_height="135dp"
+            android:layout_height="140dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/bg_add_item"
             android:elevation="10dp"
@@ -331,7 +331,7 @@
         <RelativeLayout
             android:id="@+id/container_stock"
             android:layout_width="wrap_content"
-            android:layout_height="215dp"
+            android:layout_height="220dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/bg_stock"
             android:elevation="10dp"
@@ -454,9 +454,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/iv_stock_out"
-                android:layout_marginStart="20dp"
                 android:layout_alignTop="@id/tv_report"
-                android:background="@drawable/ic_report" />
+                android:layout_marginStart="20dp"
+                android:background="@drawable/ic_pindah" />
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/tv_report"
@@ -468,7 +468,7 @@
                 android:layout_toEndOf="@id/iv_stock_in"
                 android:clickable="true"
                 android:fontFamily="@font/sfproregular"
-                android:text="Report"
+                android:text="Move"
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 tools:ignore="TouchTargetSizeCheck" />
