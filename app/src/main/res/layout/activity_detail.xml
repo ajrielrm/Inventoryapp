@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="35dp"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="40dp"
         android:fontFamily="@font/sspbold"
         android:text="Items Detail"
         android:textColor="@color/black"
@@ -38,6 +38,193 @@
         app:layout_constraintBottom_toTopOf="@+id/tv_warehouse_detail"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@id/tv_itemdetail" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_itemdetail"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="90dp"
+        android:src="@drawable/img_router"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/line_detail"
+        android:layout_width="365dp"
+        android:layout_height="6dp"
+        android:src="@drawable/line_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_itemdetail" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/item_inventory_name"
+        android:fontFamily="@font/sspbold"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/line_detail"
+        app:layout_constraintTop_toBottomOf="@+id/line_detail" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_brand_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sfprosemi"
+        android:text="Cisco"
+        app:layout_constraintStart_toStartOf="@+id/tv_item_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_item_name" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_txt_serialnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/sfprosemi"
+        android:text="Serial Number"
+        app:layout_constraintStart_toStartOf="@+id/tv_brand_detail"
+        app:layout_constraintTop_toBottomOf="@+id/tv_brand_detail" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_serialnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="325dp"
+        android:fontFamily="@font/sspbold"
+        android:text="1028129832"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_txt_serialnumber" />\
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_txt_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Location"
+        android:fontFamily="@font/sfprosemi"
+        app:layout_constraintStart_toStartOf="@+id/tv_serialnumber"
+        app:layout_constraintTop_toBottomOf="@+id/tv_serialnumber" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sspbold"
+        android:text="My Warehouse 1 - Rack 2"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/tv_txt_location"
+        app:layout_constraintTop_toBottomOf="@+id/tv_txt_location" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_txt_kategori"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/sfprosemi"
+        android:text="Kategori"
+        app:layout_constraintStart_toStartOf="@+id/tv_location"
+        app:layout_constraintTop_toBottomOf="@id/tv_location" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_kategori"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sspbold"
+        android:text="Router"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_txt_kategori"
+        app:layout_constraintTop_toBottomOf="@id/tv_txt_kategori" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_txt_deskripsi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@font/sfprosemi"
+        android:text="Description"
+        app:layout_constraintStart_toStartOf="@+id/tv_kategori"
+        app:layout_constraintTop_toBottomOf="@id/tv_kategori" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_deskripsi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sspbold"
+        android:text="New Arrival"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_txt_deskripsi"
+        app:layout_constraintTop_toBottomOf="@id/tv_txt_deskripsi" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_txt_harga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="145dp"
+        android:fontFamily="@font/sfprosemi"
+        android:text="Harga"
+        app:layout_constraintStart_toEndOf="@+id/tv_txt_serialnumber"
+        app:layout_constraintTop_toTopOf="@+id/tv_txt_serialnumber" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_harga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sspbold"
+        android:text="Rp2.500.000"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/tv_txt_harga"
+        app:layout_constraintTop_toBottomOf="@+id/tv_txt_harga" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_txt_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/sfprosemi"
+        android:text="Date/Time"
+        app:layout_constraintStart_toStartOf="@+id/tv_harga"
+        app:layout_constraintTop_toTopOf="@+id/tv_txt_location" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sspbold"
+        android:text="02-05-2022, 12:12"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_txt_date"
+        app:layout_constraintTop_toBottomOf="@+id/tv_txt_date" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_num_barcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/sfprosemi"
+        android:text="GDA-2020050"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_date"
+        app:layout_constraintTop_toBottomOf="@+id/tv_date" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_barcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_barcode_l"
+        app:layout_constraintStart_toStartOf="@+id/tv_num_barcode"
+        app:layout_constraintTop_toBottomOf="@+id/tv_num_barcode" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
