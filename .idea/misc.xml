@@ -33,7 +33,9 @@
         <entry key="app/src/main/res/drawable/ic_harga.xml" value="0.2195" />
         <entry key="app/src/main/res/drawable/line_login.xml" value="0.2195" />
         <entry key="app/src/main/res/layout/activity_add_item.xml" value="0.2598684210526316" />
+        <entry key="app/src/main/res/layout/activity_detail.xml" value="0.13815789473684212" />
         <entry key="app/src/main/res/layout/activity_inventory.xml" value="0.2598684210526316" />
+        <entry key="app/src/main/res/layout/activity_stockin.xml" value="0.11177239668996708" />
         <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.242137886742738" />
         <entry key="app/src/main/res/layout/list_item_kategori.xml" value="0.25921052631578945" />
       </map>

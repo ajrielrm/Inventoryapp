@@ -12,7 +12,6 @@
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:navigationIcon="@drawable/ic_close"
         android:layout_marginTop="70dp"
         android:layout_marginStart="40dp"/>
 
@@ -57,7 +56,7 @@
         android:layout_marginTop="15dp"
         app:layout_constraintStart_toStartOf="@+id/iv_line"
         app:layout_constraintTop_toBottomOf="@+id/iv_line"
-        app:startIconDrawable="@drawable/ic_namabarang">
+        app:startIconDrawable="@drawable/ic_barang">
 
         <EditText
             android:layout_width="match_parent"
