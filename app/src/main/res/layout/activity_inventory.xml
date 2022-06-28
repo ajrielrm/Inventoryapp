@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".InventoryActivity"
-    android:padding="30dp">
+    tools:context=".InventoryActivity">
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tv_inventory"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
         android:fontFamily="@font/sfprobold"
         android:text="Inventory"
         android:textColor="@color/black"
@@ -38,7 +38,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_profile_1"
-        android:layout_marginEnd="5dp"
+        android:layout_marginEnd="35dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="@id/tv_warehouse"/>
 
@@ -52,7 +52,7 @@
         android:textSize="20dp"
         android:layout_marginTop="37dp"
         app:layout_constraintTop_toBottomOf="@id/tv_warehouse"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tv_inventory"
         android:layout_marginStart="5dp"/>
 
     <androidx.appcompat.widget.AppCompatTextView
@@ -106,7 +106,7 @@
 
     <com.google.android.material.divider.MaterialDivider
         android:id="@+id/divider_dibawah"
-        android:layout_width="330dp"
+        android:layout_width="340dp"
         android:layout_height="1dp"
         android:layout_marginTop="10dp"
         app:layout_constraintTop_toBottomOf="@id/tv_total"
@@ -115,8 +115,8 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_stock_in"
-        android:layout_width="120dp"
-        android:layout_height="85dp"
+        android:layout_width="130dp"
+        android:layout_height="90dp"
         android:layout_marginTop="20dp"
         android:layout_marginStart="25dp"
         android:text="Stock In"
@@ -126,12 +126,12 @@
         app:cornerRadius="12dp"
         android:backgroundTint="#85B4C6"
         app:layout_constraintTop_toBottomOf="@id/divider_dibawah"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintStart_toStartOf="@id/tv_inventory"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_stock_out"
-        android:layout_width="120dp"
-        android:layout_height="85dp"
+        android:layout_width="130dp"
+        android:layout_height="90dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="25dp"
         android:text="Stock Out"
@@ -141,7 +141,7 @@
         app:cornerRadius="12dp"
         android:backgroundTint="#FFB266"
         app:layout_constraintTop_toBottomOf="@id/divider_dibawah"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="@id/divider_dibawah"/>
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/kategori"
@@ -153,61 +153,61 @@
         android:text="Categories"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tv_inventory"
         app:layout_constraintTop_toBottomOf="@id/btn_stock_in" />
 
     <RelativeLayout
-        android:id="@+id/container_kategori"
+        android:id="@+id/sv_kategori"
         android:layout_width="match_parent"
-        android:layout_height="210dp"
+        android:layout_height="215dp"
         android:layout_marginTop="10dp"
-        android:layout_marginStart="5dp"
+        android:layout_marginStart="35dp"
         app:layout_constraintTop_toBottomOf="@id/kategori"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintStart_toStartOf="@id/kategori">
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn_router"
-            android:layout_width="90dp"
-            android:layout_height="100dp"
-            android:backgroundTint="#D4E8EE"
-            android:drawableTop="@drawable/ic_profile_1"
-            android:fontFamily="@font/sfprobold"
-            android:paddingTop="10dp"
-            android:text="Router"
-            android:textColor="@color/black"
-            android:textSize="12sp"
-            app:cornerRadius="12dp" />
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn_switch"
-            android:layout_width="90dp"
-            android:layout_height="100dp"
-            android:layout_marginStart="25dp"
-            android:layout_toEndOf="@id/btn_router"
-            android:backgroundTint="#D4E8EE"
-            android:drawableTop="@drawable/ic_profile_1"
-            android:fontFamily="@font/sfprobold"
-            android:paddingTop="10dp"
-            android:text="Switch"
-            android:textColor="@color/black"
-            android:textSize="12sp"
-            app:cornerRadius="12dp" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_router"
+                android:layout_width="90dp"
+                android:layout_height="100dp"
+                android:backgroundTint="#D4E8EE"
+                android:drawableTop="@drawable/ic_profile_1"
+                android:fontFamily="@font/sfprobold"
+                android:paddingTop="10dp"
+                android:text="Router"
+                android:textColor="@color/black"
+                android:textSize="11sp"
+                app:cornerRadius="12dp" />
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn_modem"
-            android:layout_width="90dp"
-            android:layout_height="100dp"
-            android:layout_marginStart="25dp"
-            android:layout_toEndOf="@id/btn_switch"
-            android:backgroundTint="#D4E8EE"
-            android:drawableTop="@drawable/ic_profile_1"
-            android:fontFamily="@font/sfprobold"
-            android:paddingTop="10dp"
-            android:text="Modem"
-            android:textColor="@color/black"
-            android:textSize="12sp"
-            app:cornerRadius="12dp" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_switch"
+                android:layout_width="90dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="25dp"
+                android:layout_toEndOf="@id/btn_router"
+                android:backgroundTint="#D4E8EE"
+                android:drawableTop="@drawable/ic_profile_1"
+                android:fontFamily="@font/sfprobold"
+                android:paddingTop="10dp"
+                android:text="Switch"
+                android:textColor="@color/black"
+                android:textSize="11sp"
+                app:cornerRadius="12dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_modem"
+                android:layout_width="90dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="25dp"
+                android:layout_toEndOf="@id/btn_switch"
+                android:backgroundTint="#D4E8EE"
+                android:drawableTop="@drawable/ic_profile_1"
+                android:fontFamily="@font/sfprobold"
+                android:paddingTop="10dp"
+                android:text="Modem"
+                android:textColor="@color/black"
+                android:textSize="11sp"
+                app:cornerRadius="12dp" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_bridge"
@@ -220,27 +220,28 @@
             android:paddingTop="10dp"
             android:text="Bridge"
             android:textColor="@color/black"
-            android:textSize="12sp"
+            android:textSize="11sp"
             app:cornerRadius="12dp" />
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn_server"
-            android:layout_width="90dp"
-            android:layout_height="100dp"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="25dp"
-            android:layout_toEndOf="@id/btn_bridge"
-            android:backgroundTint="#D4E8EE"
-            android:drawableTop="@drawable/ic_profile_1"
-            android:fontFamily="@font/sfprobold"
-            android:paddingTop="10dp"
-            android:text="Server"
-            android:textColor="@color/black"
-            android:textSize="12sp"
-            app:cornerRadius="12dp" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_server"
+                android:layout_width="90dp"
+                android:layout_height="100dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="25dp"
+                android:layout_toEndOf="@id/btn_bridge"
+                android:backgroundTint="#D4E8EE"
+                android:drawableTop="@drawable/ic_profile_1"
+                android:fontFamily="@font/sfprobold"
+                android:paddingTop="10dp"
+                android:text="Server"
+                android:textColor="@color/black"
+                android:textSize="11sp"
+                app:cornerRadius="12dp" />
 
 
     </RelativeLayout>
+
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/Brand"
@@ -252,65 +253,68 @@
         android:text="Brands"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/container_kategori" />
+        app:layout_constraintStart_toStartOf="@id/kategori"
+        app:layout_constraintTop_toBottomOf="@id/sv_kategori" />
 
-    <RelativeLayout
-        android:id="@+id/container_brands"
+    <HorizontalScrollView
         android:layout_width="match_parent"
-        android:layout_height="195dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="5dp"
+        android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/Brand"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@id/Brand"
         app:layout_constraintEnd_toEndOf="parent">
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn_cisco"
-            android:layout_width="90dp"
-            android:layout_height="100dp"
-            android:backgroundTint="#D4E8EE"
-            android:drawableTop="@drawable/ic_profile_1"
-            android:fontFamily="@font/sfprobold"
-            android:paddingTop="10dp"
-            android:text="Cisco"
-            android:textColor="@color/black"
-            android:textSize="12sp"
-            app:cornerRadius="12dp" />
+        <RelativeLayout
+            android:id="@+id/container_brands"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="35dp">
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn_tp_link"
-            android:layout_width="90dp"
-            android:layout_height="100dp"
-            android:layout_marginStart="25dp"
-            android:layout_toEndOf="@id/btn_cisco"
-            android:backgroundTint="#D4E8EE"
-            android:drawableTop="@drawable/ic_profile_1"
-            android:fontFamily="@font/sfprobold"
-            android:paddingTop="10dp"
-            android:text="TP-Link"
-            android:textColor="@color/black"
-            android:textSize="12sp"
-            app:cornerRadius="12dp" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_cisco"
+                android:layout_width="90dp"
+                android:layout_height="100dp"
+                android:backgroundTint="#D4E8EE"
+                android:drawableTop="@drawable/ic_profile_1"
+                android:fontFamily="@font/sfprobold"
+                android:paddingTop="10dp"
+                android:text="Cisco"
+                android:textColor="@color/black"
+                android:textSize="11sp"
+                app:cornerRadius="12dp" />
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn_antech"
-            android:layout_width="90dp"
-            android:layout_height="100dp"
-            android:layout_marginStart="25dp"
-            android:layout_toEndOf="@id/btn_tp_link"
-            android:backgroundTint="#D4E8EE"
-            android:drawableTop="@drawable/ic_profile_1"
-            android:fontFamily="@font/sfprobold"
-            android:paddingTop="10dp"
-            android:text="Modem"
-            android:textColor="@color/black"
-            android:textSize="12sp"
-            app:cornerRadius="12dp" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_tp_link"
+                android:layout_width="90dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="25dp"
+                android:layout_toEndOf="@id/btn_cisco"
+                android:backgroundTint="#D4E8EE"
+                android:drawableTop="@drawable/ic_profile_1"
+                android:fontFamily="@font/sfprobold"
+                android:paddingTop="10dp"
+                android:text="TP-Link"
+                android:textColor="@color/black"
+                android:textSize="11sp"
+                app:cornerRadius="12dp" />
 
-    </RelativeLayout>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_antech"
+                android:layout_width="90dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="25dp"
+                android:layout_toEndOf="@id/btn_tp_link"
+                android:backgroundTint="#D4E8EE"
+                android:drawableTop="@drawable/ic_profile_1"
+                android:fontFamily="@font/sfprobold"
+                android:paddingTop="10dp"
+                android:text="Modem"
+                android:textColor="@color/black"
+                android:textSize="11sp"
+                app:cornerRadius="12dp" />
 
+        </RelativeLayout>
 
-
+    </HorizontalScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

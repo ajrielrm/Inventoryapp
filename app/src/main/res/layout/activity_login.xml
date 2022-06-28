@@ -16,17 +16,33 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/test2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="test"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/test3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="test"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/tv_title"
         android:layout_width="230dp"
         android:layout_height="wrap_content"
         android:text="Hi! Welcome"
-        android:fontFamily="@font/sspbold"
+        android:fontFamily="@font/sfprobold"
         android:textColor="@color/black"
         android:textSize="30sp"
+        android:layout_marginStart="30dp"
         android:layout_marginTop="80dp"
-        android:layout_marginEnd="60dp"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -35,7 +51,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sign in with Social or fill the form to continue."
-        android:fontFamily="@font/sourcesansreg"
+        android:fontFamily="@font/sfproregular"
         android:textSize="15dp"
         android:textColor="@color/grey"
         android:layout_marginTop="6dp"
@@ -56,10 +72,11 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/il_name"
         app:startIconDrawable="@drawable/ic_baseline_person_24"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="300dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        app:boxBackgroundColor="@color/white"
+        android:layout_width="335dp"
         android:layout_height="60dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="15dp"
         app:boxStrokeColor="@color/primary"
         app:hintTextColor="@color/primary"
         app:layout_constraintTop_toBottomOf="@id/line"
@@ -68,7 +85,7 @@
         <EditText
             android:inputType="textEmailAddress"
             android:hint="Name"
-            android:fontFamily="@font/sourcesansreg"
+            android:fontFamily="@font/sfproregular"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
 
@@ -80,9 +97,9 @@
         android:id="@+id/il_password"
         app:startIconDrawable="@drawable/ic_baseline_lock_24"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="300dp"
+        android:layout_width="335dp"
         android:layout_height="60dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="15dp"
         app:boxStrokeColor="@color/primary"
         app:hintTextColor="@color/primary"
         app:layout_constraintTop_toBottomOf="@id/il_name"
@@ -102,19 +119,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        android:fontFamily="@font/sourcesansreg"
+        android:fontFamily="@font/sfproregular"
         app:layout_constraintTop_toBottomOf="@id/il_password"
         app:layout_constraintStart_toStartOf="@id/il_password"
         android:text="*At least 8 characters, 1 uppercase letter, 1 number, 1 symbol"
-        android:textSize="12sp"
-        android:textColor="@color/grey"
-        />
+        android:textSize="10sp"
+        android:textColor="@color/grey" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/bt_signin"
         android:layout_width="250dp"
         android:layout_height="70dp"
-        android:fontFamily="@font/sspbold"
+        android:fontFamily="@font/sfprobold"
         android:text="Sign In"
         android:textAllCaps="false"
         android:backgroundTint="@color/primary"
@@ -126,7 +142,7 @@
         />
 
     <androidx.appcompat.widget.LinearLayoutCompat
-        android:layout_width="300dp"
+        android:layout_width="335dp"
         android:layout_height="60dp"
         app:layout_constraintBottom_toTopOf="@id/bt_signin"
         app:layout_constraintStart_toStartOf="parent"
@@ -157,7 +173,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sign Up"
-        android:fontFamily="@font/sspbold"
+        android:fontFamily="@font/sfprobold"
         android:textSize="15dp"
         android:textColor="@color/black"
         android:clickable="true"

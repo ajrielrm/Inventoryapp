@@ -11,46 +11,45 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="35dp"
-        android:layout_marginTop="40dp"
-        android:fontFamily="@font/sspbold"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/sfprobold"
         android:text="Items Detail"
         android:textColor="@color/black"
         android:textSize="25sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/toolbar"/>
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tv_warehouse_detail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/sourcesansreg"
+        android:fontFamily="@font/sfproregular"
         android:text="My Warehouse 1"
         app:layout_constraintStart_toStartOf="@+id/tv_itemdetail"
         app:layout_constraintTop_toBottomOf="@+id/tv_itemdetail" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/bt_close_detail"
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="35dp"
-        android:rotation="180"
-        app:layout_constraintBottom_toTopOf="@+id/tv_warehouse_detail"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@id/tv_itemdetail" />
+        app:navigationIcon="@drawable/ic_close"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="40dp"/>
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/iv_itemdetail"
         android:layout_width="250dp"
         android:layout_height="200dp"
-        android:layout_marginTop="90dp"
         android:src="@drawable/img_router"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/tv_warehouse_detail" />
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/line_detail"
-        android:layout_width="365dp"
+        android:layout_width="345dp"
         android:layout_height="6dp"
         android:src="@drawable/line_login"
         app:layout_constraintEnd_toEndOf="parent"
@@ -61,11 +60,12 @@
         android:id="@+id/tv_item_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:text="@string/item_inventory_name"
-        android:fontFamily="@font/sspbold"
+        android:fontFamily="@font/sfprobold"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="@+id/line_detail"
+        app:layout_constraintStart_toStartOf="@+id/tv_itemdetail"
         app:layout_constraintTop_toBottomOf="@+id/line_detail" />
 
     <androidx.appcompat.widget.AppCompatTextView
@@ -97,8 +97,8 @@
         android:text="1028129832"
         android:textColor="@color/black"
         android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/tv_txt_serialnumber" />\
+        app:layout_constraintTop_toBottomOf="@id/tv_txt_serialnumber"
+        app:layout_constraintStart_toStartOf="@+id/tv_txt_serialnumber" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tv_txt_location"
@@ -114,32 +114,32 @@
         android:id="@+id/tv_location"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/sspbold"
+        android:fontFamily="@font/sfprobold"
         android:text="My Warehouse 1 - Rack 2"
         android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="@+id/tv_txt_location"
         app:layout_constraintTop_toBottomOf="@+id/tv_txt_location" />
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/tv_txt_kategori"
+        android:id="@+id/tv_txt_date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
         android:fontFamily="@font/sfprosemi"
-        android:text="Kategori"
+        android:text="Date/Time"
         app:layout_constraintStart_toStartOf="@+id/tv_location"
         app:layout_constraintTop_toBottomOf="@id/tv_location" />
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/tv_kategori"
+        android:id="@+id/tv_date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/sspbold"
-        android:text="Router"
+        android:fontFamily="@font/sfprobold"
+        android:text="02-05-2022, 12:12"
         android:textColor="@color/black"
         android:textSize="15sp"
-        app:layout_constraintStart_toStartOf="@+id/tv_txt_kategori"
-        app:layout_constraintTop_toBottomOf="@id/tv_txt_kategori" />
+        app:layout_constraintStart_toStartOf="@+id/tv_txt_date"
+        app:layout_constraintTop_toBottomOf="@id/tv_txt_date" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tv_txt_deskripsi"
@@ -148,14 +148,14 @@
         android:layout_marginTop="35dp"
         android:fontFamily="@font/sfprosemi"
         android:text="Description"
-        app:layout_constraintStart_toStartOf="@+id/tv_kategori"
-        app:layout_constraintTop_toBottomOf="@id/tv_kategori" />
+        app:layout_constraintStart_toStartOf="@+id/tv_date"
+        app:layout_constraintTop_toBottomOf="@id/tv_date" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tv_deskripsi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/sspbold"
+        android:fontFamily="@font/sfprobold"
         android:text="New Arrival"
         android:textColor="@color/black"
         android:textSize="15sp"
@@ -166,17 +166,17 @@
         android:id="@+id/tv_txt_harga"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="145dp"
         android:fontFamily="@font/sfprosemi"
         android:text="Harga"
-        app:layout_constraintStart_toEndOf="@+id/tv_txt_serialnumber"
+        android:layout_marginEnd="120dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/tv_txt_serialnumber" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tv_harga"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/sspbold"
+        android:fontFamily="@font/sfprobold"
         android:text="Rp2.500.000"
         android:textSize="20sp"
         android:textColor="@color/black"
@@ -185,25 +185,24 @@
 
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/tv_txt_date"
+        android:id="@+id/tv_txt_kategori"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         android:fontFamily="@font/sfprosemi"
-        android:text="Date/Time"
+        android:text="Kategori"
         app:layout_constraintStart_toStartOf="@+id/tv_harga"
         app:layout_constraintTop_toTopOf="@+id/tv_txt_location" />
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/tv_date"
+        android:id="@+id/tv_kategori"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/sspbold"
-        android:text="02-05-2022, 12:12"
+        android:fontFamily="@font/sfprobold"
+        android:text="Router"
         android:textColor="@color/black"
         android:textSize="15sp"
-        app:layout_constraintStart_toStartOf="@+id/tv_txt_date"
-        app:layout_constraintTop_toBottomOf="@+id/tv_txt_date" />
+        app:layout_constraintStart_toStartOf="@+id/tv_txt_kategori"
+        app:layout_constraintTop_toBottomOf="@+id/tv_txt_kategori" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tv_num_barcode"
@@ -214,8 +213,8 @@
         android:text="GDA-2020050"
         android:textColor="@color/black"
         android:textSize="15sp"
-        app:layout_constraintStart_toStartOf="@+id/tv_date"
-        app:layout_constraintTop_toBottomOf="@+id/tv_date" />
+        app:layout_constraintStart_toStartOf="@+id/tv_kategori"
+        app:layout_constraintTop_toBottomOf="@+id/tv_kategori" />
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/iv_barcode"

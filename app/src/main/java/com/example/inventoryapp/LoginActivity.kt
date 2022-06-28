@@ -28,7 +28,17 @@ class LoginActivity : AppCompatActivity() {
         }
 
         binding.test.setOnClickListener(){
-            val search = Intent(this, SearchActivity::class.java)
+            val search = Intent(this, DetailActivity::class.java)
+            startActivity(search)
+        }
+
+        binding.test2.setOnClickListener(){
+            val search = Intent(this, MoveActivity::class.java)
+            startActivity(search)
+        }
+
+        binding.test3.setOnClickListener(){
+            val search = Intent(this, InventoryActivity::class.java)
             startActivity(search)
         }
 

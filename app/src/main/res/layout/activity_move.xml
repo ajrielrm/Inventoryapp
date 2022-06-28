@@ -13,8 +13,8 @@
         app:navigationIcon="@drawable/ic_close"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="70dp"
-        android:layout_marginStart="40dp"/>
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"/>
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tv_move"
@@ -26,7 +26,7 @@
         app:fontFamily="@font/sspbold"
         app:layout_constraintStart_toStartOf="@+id/toolbar_move"
         app:layout_constraintTop_toBottomOf="@+id/toolbar_move"
-        android:layout_marginTop="30dp"/>
+        android:layout_marginTop="10dp"/>
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tv_desc_move"
@@ -65,7 +65,31 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:fontFamily="@font/sourcesansreg"
-            android:hint="Nama Barang" />
+            android:hint="Nama Barang"
+            android:inputType="textCapSentences"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/il_deskripsi"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxBackgroundColor="@color/white"
+        android:layout_width="335dp"
+        android:layout_height="60dp"
+        app:startIconTint="@color/black"
+        app:boxStrokeColor="@color/primary"
+        app:hintTextColor="@color/primary"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@+id/il_namabarang"
+        app:layout_constraintTop_toBottomOf="@+id/il_namabarang"
+        app:startIconDrawable="@drawable/ic_deskripsi">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/sourcesansreg"
+            android:hint="Deskripsi"
+            android:inputType="textCapSentences"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -79,7 +103,7 @@
         android:textColor="@color/black"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="@id/iv_line"
-        app:layout_constraintTop_toBottomOf="@id/il_namabarang" />
+        app:layout_constraintTop_toBottomOf="@id/il_deskripsi" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/il_dropdown_dari"
@@ -95,7 +119,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:hint="Warehouse 1"
+            android:hint="Warehouse"
             android:inputType="none"
             tools:ignore="SpeakableTextPresentCheck" />
 
@@ -127,7 +151,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:hint="Warehouse 2"
+            android:hint="Warehouse"
             android:inputType="none"
             tools:ignore="SpeakableTextPresentCheck" />
 
@@ -147,7 +171,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="20dp" />
+        android:layout_marginBottom="30dp" />
 
 
 
