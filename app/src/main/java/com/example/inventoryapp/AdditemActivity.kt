@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.View
 import android.view.ViewParent
 import android.widget.*
+import androidx.core.content.ContextCompat
 import com.example.inventoryapp.databinding.ActivityAddItemBinding
 
 class AdditemActivity : AppCompatActivity(), AdapterView.OnItemClickListener {
@@ -21,6 +22,8 @@ class AdditemActivity : AppCompatActivity(), AdapterView.OnItemClickListener {
         super.onCreate(savedInstanceState)
         binding = ActivityAddItemBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        window.statusBarColor = ContextCompat.getColor(this, R.color.primary)
 
         val listKategori = resources.getStringArray(R.array.kategori_items)
         val adapter = ArrayAdapter(

@@ -14,13 +14,16 @@
         android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
         tools:targetApi="31">
         <activity
+            android:name=".StockoutActivity"
+            android:exported="false" />
+        <activity
             android:name=".MoveActivity"
             android:exported="false" />
         <activity
             android:name=".InventoryActivity"
             android:exported="false" />
         <activity
-            android:name=".AddItemActivity"
+            android:name=".AdditemActivity"
             android:exported="false" />
         <activity
             android:name=".DetailActivity"
@@ -41,7 +44,7 @@
             android:name=".SearchActivity"
             android:exported="false" />
         <activity
-            android:name=".ActivityRegister"
+            android:name=".RegisterActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

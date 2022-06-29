@@ -41,7 +41,7 @@
         android:fontFamily="@font/sfprobold"
         android:textColor="@color/black"
         android:textSize="30sp"
-        android:layout_marginStart="30dp"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="80dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -54,7 +54,6 @@
         android:fontFamily="@font/sfproregular"
         android:textSize="15dp"
         android:textColor="@color/grey"
-        android:layout_marginTop="6dp"
         app:layout_constraintStart_toStartOf="@id/tv_title"
         app:layout_constraintTop_toBottomOf="@id/tv_title" />
 
@@ -74,8 +73,9 @@
         app:startIconDrawable="@drawable/ic_baseline_person_24"
         style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
         app:boxBackgroundColor="@color/white"
-        android:layout_width="335dp"
+        android:layout_width="match_parent"
         android:layout_height="60dp"
+        android:layout_marginHorizontal="32dp"
         android:layout_marginTop="15dp"
         app:boxStrokeColor="@color/primary"
         app:hintTextColor="@color/primary"
@@ -97,8 +97,9 @@
         android:id="@+id/il_password"
         app:startIconDrawable="@drawable/ic_baseline_lock_24"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="335dp"
+        android:layout_width="match_parent"
         android:layout_height="60dp"
+        android:layout_marginHorizontal="32dp"
         android:layout_marginTop="15dp"
         app:boxStrokeColor="@color/primary"
         app:hintTextColor="@color/primary"
@@ -116,15 +117,16 @@
 
     <TextView
         android:id="@+id/tv_req"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
         android:layout_marginTop="5dp"
         android:fontFamily="@font/sfproregular"
-        app:layout_constraintTop_toBottomOf="@id/il_password"
-        app:layout_constraintStart_toStartOf="@id/il_password"
         android:text="*At least 8 characters, 1 uppercase letter, 1 number, 1 symbol"
-        android:textSize="10sp"
-        android:textColor="@color/grey" />
+        android:textSize="11sp"
+        android:textColor="@color/grey"
+        app:layout_constraintTop_toBottomOf="@id/il_password"
+        app:layout_constraintStart_toStartOf="@id/il_password"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/bt_signin"
@@ -142,8 +144,9 @@
         />
 
     <androidx.appcompat.widget.LinearLayoutCompat
-        android:layout_width="335dp"
+        android:layout_width="match_parent"
         android:layout_height="60dp"
+        android:layout_marginHorizontal="32dp"
         app:layout_constraintBottom_toTopOf="@id/bt_signin"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -161,7 +164,7 @@
             android:layout_marginTop="8dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/sourcesansreg"
+            android:fontFamily="@font/sfproregular"
             android:text="Remember me next time"
             android:textColor="@color/grey"
             />
@@ -177,7 +180,7 @@
         android:textSize="15dp"
         android:textColor="@color/black"
         android:clickable="true"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="30dp"
         app:layout_constraintStart_toStartOf="@id/bt_signin"
         app:layout_constraintEnd_toEndOf="@+id/bt_signin"
         app:layout_constraintTop_toBottomOf="@id/bt_signin" />

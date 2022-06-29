@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@color/white"
-    >
+    android:background="@color/white">
 
     <TextView
         android:id="@+id/tv_title"
@@ -17,8 +16,7 @@
         android:textColor="@color/black"
         android:textSize="30sp"
         android:layout_marginTop="70dp"
-        android:layout_marginEnd="60dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="32dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -48,10 +46,12 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/il_name"
         app:startIconDrawable="@drawable/ic_baseline_person_24"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="300dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        app:boxBackgroundColor="@color/white"
+        android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="10dp"
         app:boxStrokeColor="@color/primary"
         app:hintTextColor="@color/primary"
         app:layout_constraintTop_toBottomOf="@id/line"
@@ -69,10 +69,12 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/il_email"
         app:startIconDrawable="@drawable/ic_baseline_email_24"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="300dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        app:boxBackgroundColor="@color/white"
+        android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="10dp"
         app:boxStrokeColor="@color/primary"
         app:hintTextColor="@color/primary"
         app:layout_constraintTop_toBottomOf="@id/il_name"
@@ -90,9 +92,10 @@
         android:id="@+id/il_password"
         app:startIconDrawable="@drawable/ic_baseline_lock_24"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="300dp"
+        android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="10dp"
         app:boxStrokeColor="@color/primary"
         app:hintTextColor="@color/primary"
         app:layout_constraintTop_toBottomOf="@id/il_email"
@@ -109,14 +112,15 @@
 
     <TextView
         android:id="@+id/tv_req"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
         android:layout_marginTop="5dp"
         android:fontFamily="@font/sfproregular"
         app:layout_constraintTop_toBottomOf="@id/il_password"
         app:layout_constraintStart_toStartOf="@id/il_password"
         android:text="*At least 8 characters, 1 uppercase letter, 1 number, 1 symbol"
-        android:textSize="12sp"
+        android:textSize="11sp"
         android:textColor="@color/grey"
         />
 
@@ -129,6 +133,7 @@
         android:textAllCaps="false"
         android:backgroundTint="@color/primary"
         app:cornerRadius="10dp"
+        android:clickable="true"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_req"
@@ -136,8 +141,9 @@
         />
 
     <androidx.appcompat.widget.LinearLayoutCompat
-        android:layout_width="300dp"
+        android:layout_width="match_parent"
         android:layout_height="60dp"
+        android:layout_marginHorizontal="32dp"
         app:layout_constraintBottom_toTopOf="@id/bt_signup"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -154,6 +160,7 @@
         <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/sfproregular"
             android:text="By Signing up, you agree to the Terms of Service and Privacy Policy"
             android:textColor="@color/grey"
             />
@@ -168,7 +175,8 @@
         android:fontFamily="@font/sfprobold"
         android:textSize="15dp"
         android:textColor="@color/black"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="30dp"
+        android:clickable="true"
         app:layout_constraintStart_toStartOf="@id/bt_signup"
         app:layout_constraintEnd_toEndOf="@+id/bt_signup"
         app:layout_constraintTop_toBottomOf="@id/bt_signup" />

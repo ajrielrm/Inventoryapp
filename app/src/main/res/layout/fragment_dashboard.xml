@@ -52,7 +52,7 @@
             android:id="@+id/iv_profile_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="30dp"
+            android:layout_marginEnd="32dp"
             android:src="@drawable/ic_profile_1"
             app:layout_constraintBottom_toBottomOf="@id/tv_welcome"
             app:layout_constraintEnd_toEndOf="parent" />
@@ -73,8 +73,9 @@
 
         <RelativeLayout
             android:id="@+id/container_beranda"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="160dp"
+            android:layout_marginHorizontal="32dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/bg_report"
             app:layout_constraintEnd_toEndOf="parent"
@@ -216,8 +217,9 @@
 
         <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/et_search_bar"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginHorizontal="32dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/bg_rounded"
             android:clickable="true"
@@ -235,9 +237,10 @@
 
         <RelativeLayout
             android:id="@+id/container_add_item"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="140dp"
             android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="32dp"
             android:background="@drawable/bg_add_item"
             android:elevation="10dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -327,12 +330,12 @@
 
         </RelativeLayout>
 
-
         <RelativeLayout
             android:id="@+id/container_stock"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="220dp"
             android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="32dp"
             android:background="@drawable/bg_stock"
             android:elevation="10dp"
             app:layout_constraintEnd_toEndOf="parent"

@@ -14,7 +14,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="20dp"
-        android:layout_marginStart="30dp"/>
+        android:layout_marginStart="32dp"/>
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tv_move"
@@ -23,7 +23,7 @@
         android:text="Move"
         android:textColor="@color/black"
         android:textSize="30sp"
-        app:fontFamily="@font/sspbold"
+        app:fontFamily="@font/sfprobold"
         app:layout_constraintStart_toStartOf="@+id/toolbar_move"
         app:layout_constraintTop_toBottomOf="@+id/toolbar_move"
         android:layout_marginTop="10dp"/>
@@ -34,7 +34,7 @@
         android:layout_height="wrap_content"
         android:text="Lorem ipsum dolor sit amet, consectetur"
         android:textSize="15sp"
-        app:fontFamily="@font/sourcesansreg"
+        app:fontFamily="@font/sfproregular"
         app:layout_constraintStart_toStartOf="@+id/tv_move"
         app:layout_constraintTop_toBottomOf="@+id/tv_move" />
 
@@ -51,8 +51,9 @@
         android:id="@+id/il_namabarang"
         style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
         app:boxBackgroundColor="@color/white"
-        android:layout_width="335dp"
+        android:layout_width="match_parent"
         android:layout_height="60dp"
+        android:layout_marginHorizontal="32dp"
         app:startIconTint="@color/black"
         app:boxStrokeColor="@color/primary"
         app:hintTextColor="@color/primary"
@@ -64,7 +65,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:fontFamily="@font/sourcesansreg"
+            android:fontFamily="@font/sfproregular"
             android:hint="Nama Barang"
             android:inputType="textCapSentences"/>
 
@@ -74,8 +75,9 @@
         android:id="@+id/il_deskripsi"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         app:boxBackgroundColor="@color/white"
-        android:layout_width="335dp"
+        android:layout_width="match_parent"
         android:layout_height="60dp"
+        android:layout_marginHorizontal="32dp"
         app:startIconTint="@color/black"
         app:boxStrokeColor="@color/primary"
         app:hintTextColor="@color/primary"
@@ -87,7 +89,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:fontFamily="@font/sourcesansreg"
+            android:fontFamily="@font/sfproregular"
             android:hint="Deskripsi"
             android:inputType="textCapSentences"/>
 
