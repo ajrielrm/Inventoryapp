@@ -7,498 +7,507 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <ScrollView
         android:layout_width="wrap_content"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
-        <androidx.appcompat.widget.AppCompatImageView
-            android:layout_width="500dp"
-            android:layout_height="300dp"
-            android:background="@drawable/bg_beranda"
-            android:scaleType="centerInside"
-            android:layout_marginBottom="50dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toTopOf="@id/et_search_bar" />
-
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/tv_hello"
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="35dp"
-            app:layout_constraintStart_toStartOf="@id/container_beranda"
-            android:fontFamily="@font/sfproregular"
-            android:text="Hallo, Damian!"
-            android:textColor="@color/white"
-            android:textSize="16sp"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:layout_height="match_parent">
 
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/tv_welcome"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/tv_hello"
-            android:layout_alignStart="@+id/tv_hello"
-            android:fontFamily="@font/sfprobold"
-            android:text="Your RV110W is out of stocks!"
-            android:textColor="@color/white"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="@id/tv_hello"
-            app:layout_constraintTop_toBottomOf="@id/tv_hello" />
-
-        <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/iv_profile_1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="30dp"
-            android:src="@drawable/ic_profile_1"
-            app:layout_constraintBottom_toBottomOf="@id/tv_welcome"
-            app:layout_constraintEnd_toEndOf="parent" />
-
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/tv_beranda"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/tv_hello"
-            android:layout_alignStart="@+id/tv_hello"
-            android:layout_marginTop="20dp"
-            android:fontFamily="@font/sfprobold"
-            android:text="Beranda"
-            android:textColor="@color/white"
-            android:textSize="20sp"
-            app:layout_constraintStart_toStartOf="@id/tv_hello"
-            app:layout_constraintTop_toBottomOf="@id/tv_welcome" />
-
-        <RelativeLayout
-            android:id="@+id/container_beranda"
-            android:layout_width="wrap_content"
-            android:layout_height="160dp"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/bg_report"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv_beranda">
-
-            <TextView
-                android:id="@+id/tv_hari_ini"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="15dp"
-                android:fontFamily="@font/sfprobold"
-                android:text="Hari Ini"
-                android:textColor="@color/white"
-                android:textSize="16sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="15dp"
-                android:layout_toEndOf="@id/tv_hari_ini"
-                android:fontFamily="@font/sfprosemi"
-                android:text="@string/tanggaldashboard"
-                android:textColor="@color/grey_text"
-                android:textSize="16sp" />
-
-            <TextView
-                android:id="@+id/tv_total_item"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/tv_hari_ini"
-                android:layout_marginTop="20dp"
-                android:layout_marginStart="20dp"
-                android:fontFamily="@font/sfprobold"
-                android:text="2.321"
-                android:textColor="@color/white"
-                android:textSize="24sp" />
-
-            <TextView
-                android:id="@+id/tv_items"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/tv_total_item"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="10dp"
-                android:fontFamily="@font/sfprosemi"
-                android:text="Items"
-                android:textColor="@color/grey_text"
-                android:textSize="16sp" />
-
-            <com.google.android.material.divider.MaterialDivider
-                android:id="@+id/divider_1"
-                android:layout_width="1dp"
-                android:layout_height="70dp"
-                android:layout_below="@id/tv_hari_ini"
-                android:layout_marginStart="15dp"
-                android:layout_marginTop="20dp"
-                android:layout_toEndOf="@id/tv_total_item"
-                app:dividerColor="@color/grey_text" />
-
-            <TextView
-                android:id="@+id/tv_total_stock_masuk"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/tv_hari_ini"
-                android:layout_marginTop="20dp"
-                android:layout_toEndOf="@id/divider_1"
-                android:layout_marginStart="15dp"
-                android:fontFamily="@font/sfprobold"
-                android:text="18"
-                android:textColor="@color/white"
-                android:textSize="24sp" />
-
-            <TextView
-                android:id="@+id/tv_stock_masuk"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/tv_total_item"
-                android:layout_marginStart="15dp"
-                android:layout_marginTop="10dp"
-                android:layout_toEndOf="@id/divider_1"
-                android:fontFamily="@font/sfprosemi"
-                android:text="Stok Masuk"
-                android:textColor="@color/grey_text"
-                android:textSize="16sp" />
-
-            <com.google.android.material.divider.MaterialDivider
-                android:id="@+id/divider_2"
-                android:layout_width="1dp"
-                android:layout_height="70dp"
-                android:layout_below="@id/tv_hari_ini"
-                android:layout_marginStart="15dp"
-                android:layout_marginTop="20dp"
-                android:layout_toEndOf="@id/tv_stock_masuk"
-                app:dividerColor="@color/grey_text" />
-
-            <TextView
-                android:id="@+id/tv_total_stock_keluar"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/tv_hari_ini"
-                android:layout_marginStart="15dp"
-                android:layout_marginTop="20dp"
-                android:layout_toEndOf="@id/divider_2"
-                android:fontFamily="@font/sfprobold"
-                android:text="57"
-                android:textColor="@color/white"
-                android:textSize="24sp" />
-
-            <TextView
-                android:id="@+id/tv_stock_keluar"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/tv_total_item"
-                android:layout_marginStart="15dp"
-                android:layout_marginTop="10dp"
-                android:layout_toEndOf="@id/divider_2"
-                android:fontFamily="@font/sfprosemi"
-                android:text="Stok Keluar"
-                android:textColor="@color/grey_text"
-                android:textSize="16sp" />
-
-            <TextView
-                android:id="@+id/tv_view_all"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="60dp"
-                android:layout_marginTop="20dp"
-                android:layout_toEndOf="@id/divider_2"
-                android:fontFamily="@font/sfprosemi"
-                android:text="View all"
-                android:textColor="@color/grey_text"
-                android:textSize="12sp" />
-
-        </RelativeLayout>
-
-
-        <androidx.appcompat.widget.AppCompatEditText
-            android:id="@+id/et_search_bar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/bg_rounded"
-            android:clickable="true"
-            android:drawableStart="@drawable/ic_search"
-            android:drawablePadding="10dp"
-            android:drawableEnd="@drawable/ic_scan"
-            android:elevation="10dp"
-            android:hint="@string/text_search"
-            android:fontFamily="@font/sfprosemi"
-            android:paddingStart="20dp"
-            android:paddingEnd="10dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/container_beranda" />
-
-        <RelativeLayout
-            android:id="@+id/container_add_item"
-            android:layout_width="wrap_content"
-            android:layout_height="135dp"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/bg_add_item"
-            android:elevation="10dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/et_search_bar">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="500dp"
+                android:layout_height="300dp"
+                android:background="@drawable/bg_beranda"
+                android:scaleType="centerInside"
+                android:layout_marginBottom="50dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/et_search_bar" />
 
             <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/tv_add_item"
+                android:id="@+id/tv_hello"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="15dp"
-                android:fontFamily="@font/sfprobold"
-                android:text="Add Item"
-                android:textColor="@color/black"
-                android:textSize="20sp" />
-
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/iv_add"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/ic_add"
-                android:layout_below="@id/tv_add_item"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="15dp"/>
-
-            <com.google.android.material.textview.MaterialTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/tv_add_item"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="16dp"
-                android:layout_toEndOf="@id/iv_add"
-                android:clickable="true"
+                android:layout_marginTop="35dp"
+                app:layout_constraintStart_toStartOf="@id/container_beranda"
                 android:fontFamily="@font/sfproregular"
-                android:text="Register new item"
-                android:textColor="@color/black"
+                android:text="Hallo, Damian!"
+                android:textColor="@color/white"
                 android:textSize="16sp"
-                tools:ignore="TouchTargetSizeCheck" />
-
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/iv_file"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:layout_below="@id/iv_add"
-                android:layout_marginStart="22dp"
-                android:layout_marginTop="15dp"
-                android:background="@drawable/ic_file" />
-
-            <com.google.android.material.textview.MaterialTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/iv_add"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="16dp"
-                android:layout_toEndOf="@id/iv_add"
-                android:clickable="true"
-                android:fontFamily="@font/sfproregular"
-                android:text="Register by File"
-                android:textColor="@color/black"
-                android:textSize="16sp"
-                tools:ignore="TouchTargetSizeCheck" />
-
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/iv_arrow_1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignTop="@id/iv_add"
-                android:layout_marginStart="190dp"
-                android:layout_toEndOf="@id/tv_add_item"
-                android:background="@drawable/ic_arrow_right"
-                android:backgroundTint="@color/grey_text"
-                android:clickable="true"
-                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
-
-            <androidx.appcompat.widget.AppCompatImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/iv_arrow_1"
-                android:layout_alignTop="@id/iv_file"
-                android:layout_marginStart="190dp"
-                android:layout_toEndOf="@id/tv_add_item"
-                android:background="@drawable/ic_arrow_right"
-                android:backgroundTint="@color/grey_text"
-                android:clickable="true"
-                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
-
-        </RelativeLayout>
-
-
-        <RelativeLayout
-            android:id="@+id/container_stock"
-            android:layout_width="wrap_content"
-            android:layout_height="215dp"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/bg_stock"
-            android:elevation="10dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/container_add_item">
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/tv_stock_in_out"
+                android:id="@+id/tv_welcome"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="15dp"
+                android:layout_below="@id/tv_hello"
+                android:layout_alignStart="@+id/tv_hello"
                 android:fontFamily="@font/sfprobold"
-                android:text="Stock In / Out"
-                android:textColor="@color/black"
-                android:textSize="20sp" />
-
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/iv_stock_in"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/tv_stock_in_out"
-                android:layout_marginStart="20dp"
-                android:layout_alignTop="@id/tv_stock_in"
-                android:background="@drawable/ic_stock_in" />
-
-            <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/tv_stock_in"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/tv_stock_in_out"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="16dp"
-                android:layout_toEndOf="@id/iv_stock_in"
-                android:clickable="true"
-                android:fontFamily="@font/sfproregular"
-                android:text="Stock In"
-                android:textColor="@color/black"
+                android:text="Your RV110W is out of stocks!"
+                android:textColor="@color/white"
                 android:textSize="16sp"
-                tools:ignore="TouchTargetSizeCheck" />
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/tv_hello"
+                app:layout_constraintTop_toBottomOf="@id/tv_hello" />
 
             <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/iv_stock_out"
+                android:id="@+id/iv_profile_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/iv_stock_in"
-                android:layout_marginStart="20dp"
-                android:layout_alignTop="@id/tv_stock_out"
-                android:background="@drawable/ic_stock_out" />
+                android:layout_marginEnd="32dp"
+                android:src="@drawable/ic_profile_1"
+                app:layout_constraintBottom_toBottomOf="@id/tv_welcome"
+                app:layout_constraintEnd_toEndOf="parent" />
 
-            <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/tv_stock_out"
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_beranda"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/iv_stock_in"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="16dp"
-                android:layout_toEndOf="@id/iv_stock_in"
+                android:layout_below="@id/tv_hello"
+                android:layout_alignStart="@+id/tv_hello"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/sfprobold"
+                android:text="Beranda"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@id/tv_hello"
+                app:layout_constraintTop_toBottomOf="@id/tv_welcome" />
+
+            <RelativeLayout
+                android:id="@+id/container_beranda"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginHorizontal="32dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_report"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_beranda">
+
+                <TextView
+                    android:id="@+id/tv_hari_ini"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/sfprobold"
+                    android:text="Hari Ini"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toEndOf="@id/tv_hari_ini"
+                    android:fontFamily="@font/sfprosemi"
+                    android:text="@string/tanggaldashboard"
+                    android:textColor="@color/grey_text"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_total_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_hari_ini"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/sfprobold"
+                    android:text="2.321"
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/tv_items"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_total_item"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/sfprosemi"
+                    android:text="Items"
+                    android:textColor="@color/grey_text"
+                    android:textSize="16sp" />
+
+                <com.google.android.material.divider.MaterialDivider
+                    android:id="@+id/divider_1"
+                    android:layout_width="1dp"
+                    android:layout_height="70dp"
+                    android:layout_below="@id/tv_hari_ini"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toEndOf="@id/tv_total_item"
+                    app:dividerColor="@color/grey_text" />
+
+                <TextView
+                    android:id="@+id/tv_total_stock_masuk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_hari_ini"
+                    android:layout_marginTop="20dp"
+                    android:layout_toEndOf="@id/divider_1"
+                    android:layout_marginStart="15dp"
+                    android:fontFamily="@font/sfprobold"
+                    android:text="18"
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/tv_stock_masuk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_total_item"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@id/divider_1"
+                    android:fontFamily="@font/sfprosemi"
+                    android:text="Stok Masuk"
+                    android:textColor="@color/grey_text"
+                    android:textSize="16sp" />
+
+                <com.google.android.material.divider.MaterialDivider
+                    android:id="@+id/divider_2"
+                    android:layout_width="1dp"
+                    android:layout_height="70dp"
+                    android:layout_below="@id/tv_hari_ini"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toEndOf="@id/tv_stock_masuk"
+                    app:dividerColor="@color/grey_text" />
+
+                <TextView
+                    android:id="@+id/tv_total_stock_keluar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_hari_ini"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toEndOf="@id/divider_2"
+                    android:fontFamily="@font/sfprobold"
+                    android:text="57"
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/tv_stock_keluar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_total_item"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@id/divider_2"
+                    android:fontFamily="@font/sfprosemi"
+                    android:text="Stok Keluar"
+                    android:textColor="@color/grey_text"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_view_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toEndOf="@id/divider_2"
+                    android:fontFamily="@font/sfprosemi"
+                    android:text="View all"
+                    android:textColor="@color/grey_text"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_search_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="32dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_rounded"
                 android:clickable="true"
-                android:fontFamily="@font/sfproregular"
-                android:text="Stock Out"
-                android:textColor="@color/black"
-                android:textSize="16sp"
-                tools:ignore="TouchTargetSizeCheck" />
+                android:drawableStart="@drawable/ic_search"
+                android:drawablePadding="10dp"
+                android:drawableEnd="@drawable/ic_scan"
+                android:elevation="10dp"
+                android:hint="@string/text_search"
+                android:fontFamily="@font/sfprosemi"
+                android:paddingStart="20dp"
+                android:paddingEnd="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/container_beranda" />
 
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/iv_arrow_right_1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignTop="@id/iv_stock_in"
-                android:layout_marginStart="149dp"
-                android:layout_toEndOf="@id/tv_stock_in_out"
-                android:background="@drawable/ic_arrow_right"
-                android:backgroundTint="@color/grey_text"
-                android:clickable="true"
-                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            <RelativeLayout
+                android:id="@+id/container_add_item"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="32dp"
+                android:background="@drawable/bg_add_item"
+                android:elevation="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/et_search_bar">
 
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/iv_arrow_right_2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/iv_arrow_right_1"
-                android:layout_alignTop="@id/iv_stock_out"
-                android:layout_marginStart="149dp"
-                android:layout_toEndOf="@id/tv_stock_in_out"
-                android:background="@drawable/ic_arrow_right"
-                android:backgroundTint="@color/grey_text"
-                android:clickable="true"
-                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_add_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/sfprobold"
+                    android:text="Add Item"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
 
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/iv_arrow_right_3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/iv_arrow_right_2"
-                android:layout_alignTop="@id/iv_report"
-                android:layout_marginStart="149dp"
-                android:layout_toEndOf="@id/tv_stock_in_out"
-                android:background="@drawable/ic_arrow_right"
-                android:backgroundTint="@color/grey_text"
-                android:clickable="true"
-                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_add"
+                    android:layout_below="@id/tv_add_item"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"/>
 
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/iv_arrow_right_4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/iv_arrow_right_3"
-                android:layout_alignTop="@id/iv_history_stock"
-                android:layout_marginStart="149dp"
-                android:layout_toEndOf="@id/tv_stock_in_out"
-                android:background="@drawable/ic_arrow_right"
-                android:backgroundTint="@color/grey_text"
-                android:clickable="true"
-                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_add_item"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_toEndOf="@id/iv_add"
+                    android:clickable="true"
+                    android:fontFamily="@font/sfproregular"
+                    android:text="Register new item"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    tools:ignore="TouchTargetSizeCheck" />
 
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/iv_report"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/iv_stock_out"
-                android:layout_marginStart="20dp"
-                android:layout_alignTop="@id/tv_report"
-                android:background="@drawable/ic_report" />
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_file"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/iv_add"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/ic_file" />
 
-            <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/tv_report"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/iv_stock_out"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="16dp"
-                android:layout_toEndOf="@id/iv_stock_in"
-                android:clickable="true"
-                android:fontFamily="@font/sfproregular"
-                android:text="Report"
-                android:textColor="@color/black"
-                android:textSize="16sp"
-                tools:ignore="TouchTargetSizeCheck" />
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_add"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_toEndOf="@id/iv_add"
+                    android:clickable="true"
+                    android:fontFamily="@font/sfproregular"
+                    android:text="Register by File"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    tools:ignore="TouchTargetSizeCheck" />
 
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/iv_history_stock"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/iv_report"
-                android:layout_marginStart="20dp"
-                android:layout_alignTop="@id/tv_history_stock"
-                android:background="@drawable/ic_history_stock" />
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_arrow_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/iv_add"
+                    android:layout_marginStart="190dp"
+                    android:layout_toEndOf="@id/tv_add_item"
+                    android:background="@drawable/ic_arrow_right"
+                    android:backgroundTint="@color/grey_text"
+                    android:clickable="true"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
-            <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/tv_history_stock"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/tv_report"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="18dp"
-                android:layout_toEndOf="@id/iv_stock_in"
-                android:clickable="true"
-                android:fontFamily="@font/sfproregular"
-                android:text="History"
-                android:textColor="@color/black"
-                android:textSize="16sp"
-                tools:ignore="TouchTargetSizeCheck" />
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_arrow_1"
+                    android:layout_alignTop="@id/iv_file"
+                    android:layout_marginStart="190dp"
+                    android:layout_toEndOf="@id/tv_add_item"
+                    android:background="@drawable/ic_arrow_right"
+                    android:backgroundTint="@color/grey_text"
+                    android:clickable="true"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
-        </RelativeLayout>
+            </RelativeLayout>
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            <RelativeLayout
+                android:id="@+id/container_stock"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="32dp"
+                android:background="@drawable/bg_stock"
+                android:elevation="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/container_add_item">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_stock_in_out"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/sfprobold"
+                    android:text="Stock In / Out"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_stock_in"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_stock_in_out"
+                    android:layout_marginStart="20dp"
+                    android:layout_alignTop="@id/tv_stock_in"
+                    android:background="@drawable/ic_stock_in" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_stock_in"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_stock_in_out"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_toEndOf="@id/iv_stock_in"
+                    android:clickable="true"
+                    android:fontFamily="@font/sfproregular"
+                    android:text="Stock In"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_stock_out"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_stock_in"
+                    android:layout_marginStart="20dp"
+                    android:layout_alignTop="@id/tv_stock_out"
+                    android:background="@drawable/ic_stock_out" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_stock_out"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_stock_in"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_toEndOf="@id/iv_stock_in"
+                    android:clickable="true"
+                    android:fontFamily="@font/sfproregular"
+                    android:text="Stock Out"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_arrow_right_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/iv_stock_in"
+                    android:layout_marginStart="149dp"
+                    android:layout_toEndOf="@id/tv_stock_in_out"
+                    android:background="@drawable/ic_arrow_right"
+                    android:backgroundTint="@color/grey_text"
+                    android:clickable="true"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_arrow_right_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_arrow_right_1"
+                    android:layout_alignTop="@id/iv_stock_out"
+                    android:layout_marginStart="149dp"
+                    android:layout_toEndOf="@id/tv_stock_in_out"
+                    android:background="@drawable/ic_arrow_right"
+                    android:backgroundTint="@color/grey_text"
+                    android:clickable="true"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_arrow_right_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_arrow_right_2"
+                    android:layout_alignTop="@id/iv_report"
+                    android:layout_marginStart="149dp"
+                    android:layout_toEndOf="@id/tv_stock_in_out"
+                    android:background="@drawable/ic_arrow_right"
+                    android:backgroundTint="@color/grey_text"
+                    android:clickable="true"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_arrow_right_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_arrow_right_3"
+                    android:layout_alignTop="@id/iv_history_stock"
+                    android:layout_marginStart="149dp"
+                    android:layout_toEndOf="@id/tv_stock_in_out"
+                    android:background="@drawable/ic_arrow_right"
+                    android:backgroundTint="@color/grey_text"
+                    android:clickable="true"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_report"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_stock_out"
+                    android:layout_alignTop="@id/tv_report"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/ic_pindah" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_report"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_stock_out"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_toEndOf="@id/iv_stock_in"
+                    android:clickable="true"
+                    android:fontFamily="@font/sfproregular"
+                    android:text="Move"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_history_stock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_report"
+                    android:layout_marginStart="20dp"
+                    android:layout_alignTop="@id/tv_history_stock"
+                    android:background="@drawable/ic_history_stock" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_history_stock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_report"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_toEndOf="@id/iv_stock_in"
+                    android:clickable="true"
+                    android:fontFamily="@font/sfproregular"
+                    android:text="History"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            </RelativeLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
 
 </FrameLayout>

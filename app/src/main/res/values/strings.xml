@@ -7,7 +7,7 @@
     <string name="harga_item">Rp2.500.000</string>
     <string name="desc_item">Cisco</string>
     <string name="text_location">Location</string>
-    <string name="location_item">My Warehouse 1 - Rack 2</string>
+    <string name="location_item">My Warehouse 1</string>
     <string name="text_search">Search</string>
     <string name="tanggaldashboard">24 Juni</string>
     <string name="stockin_text">Stock In</string>
@@ -19,6 +19,14 @@
         <item>Bridge</item>
         <item>Modem</item>
         <item>Repeater</item>
+    </string-array>
+
+    // Dropdown Dari/Move Items
+    <string-array name="warehouse_items">
+        <item>Warehouse Sementara</item>
+        <item>Warehouse 1</item>
+        <item>Warehouse 2</item>
+        <item>Warehouse 3</item>
     </string-array>
 
 </resources>

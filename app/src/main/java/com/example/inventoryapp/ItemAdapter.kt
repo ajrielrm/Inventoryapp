@@ -10,9 +10,9 @@ import androidx.recyclerview.widget.RecyclerView
 
 class ItemAdapter: RecyclerView.Adapter<ItemAdapter.ViewHolder>(){
 
-    private var title = arrayOf("RV110W", "AC-1200", "Catalyst 2960-L", "N200RE", "EZ-Label Printer", "HP-All in One 720", "Mcflurry")
+    private var title = arrayOf("RV110W", "AC-1200", "Catalyst 2960-L", "N200RE", "EZ-Label Printer", "HP-All in One 720")
 
-    private var merek = arrayOf("Cisco", "Tp-Link", "Cisco", "TOTOLINK", "Casio", "HP", "mcd")
+    private var merek = arrayOf("Cisco", "Tp-Link", "Cisco", "TOTOLINK", "Casio", "HP")
 
     private var image = intArrayOf(R.drawable.img_router, R.drawable.img_ac, R.drawable.img_cata, R.drawable.img_nt200, R.drawable.img_ezlabel, R.drawable.img_hp, R.drawable.img_ezlabel)
 
@@ -51,5 +51,3 @@ class ItemAdapter: RecyclerView.Adapter<ItemAdapter.ViewHolder>(){
 
 
     }
-
-
