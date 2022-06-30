@@ -7,9 +7,11 @@
     >
 
     <FrameLayout
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         android:id="@+id/fragment_container"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="705dp"
         >
 
 
@@ -18,7 +20,7 @@
     <com.ismaeldivita.chipnavigation.ChipNavigationBar
         android:id="@+id/bottom_navbar"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="60dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:cnb_menuResource="@menu/menu"
         android:background="@color/primary"
