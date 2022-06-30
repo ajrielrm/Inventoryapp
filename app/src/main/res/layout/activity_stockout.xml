@@ -127,4 +127,56 @@
 
     </ScrollView>
 
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btn_order_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:backgroundTint="@color/primary"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_total_pesanan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 pesanan | Rp 0"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="McDonald's"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_cart"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
